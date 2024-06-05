@@ -1,0 +1,9 @@
+{
+   "solar_controller": {
+      "solar_temp": 0,
+      "pool_temp": 0,
+      "pool_temp_control": 0,
+      "valve_control_mode": 0,
+      "heating_cooling_mode": 0
+   }
+}

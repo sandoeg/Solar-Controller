@@ -1,0 +1,507 @@
+<mxfile host="Electron" modified="2023-07-03T12:44:07.261Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="X8fFC2R5ps1G7NwC5Rzf" version="21.5.1" type="device" pages="3">
+  <diagram name="Page-1" id="RW7ZSGOQK8JWVU-d4UL2">
+    <mxGraphModel dx="939" dy="578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="re3Pza3lycyoLmRBugH8-1" target="re3Pza3lycyoLmRBugH8-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="re3Pza3lycyoLmRBugH8-1" value="Set&amp;nbsp;&lt;br&gt;Pool Temp Control = MAX_TEMP&lt;br&gt;Valve Control Mode = OFF&lt;br&gt;Heating / Cooling Mode = HEATING" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="270" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-16" value="&amp;gt;20 temps &amp;amp; Pool Temp = MAXTEMP &amp;amp; VC = OFF&amp;nbsp; &amp;amp; HC = H" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="re3Pza3lycyoLmRBugH8-2" edge="1">
+          <mxGeometry x="0.3333" y="40" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="420" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="re3Pza3lycyoLmRBugH8-2" value="Collect 20 seconds of averaged data" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="D6MtXO1dKV4zH6gCZeqT-3" target="re3Pza3lycyoLmRBugH8-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-3" value="Power On Reset" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-5" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Power on Reset Default Values&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;{&lt;/div&gt;&lt;/div&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;   &quot;solar_controller&quot;: {&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;solar_temp&quot;&lt;/span&gt;: &lt;span style=&quot;color: rgb(181, 206, 168);&quot;&gt;N/A&lt;/span&gt;,&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;pool_temp&quot;&lt;/span&gt;&lt;font color=&quot;#cccccc&quot;&gt;: &lt;/font&gt;&lt;font color=&quot;#b5cea8&quot;&gt;&lt;span style=&quot;caret-color: rgb(181, 206, 168);&quot;&gt;N/A&lt;/span&gt;&lt;/font&gt;&lt;font color=&quot;#cccccc&quot;&gt;,&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;pool_temp_control&quot;&lt;/span&gt;: &lt;/span&gt;&lt;font color=&quot;#b5cea8&quot;&gt;&lt;span style=&quot;caret-color: rgb(181, 206, 168);&quot;&gt;50 deg&lt;/span&gt;&lt;/font&gt;&lt;font color=&quot;#cccccc&quot;&gt;,&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;valve_control_mode&quot;&lt;/span&gt;: &lt;span style=&quot;color: rgb(181, 206, 168);&quot;&gt;OFF&lt;/span&gt;,&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;&lt;span style=&quot;color: rgb(156, 220, 254);&quot;&gt;&quot;heating_cooling_mode&quot;&lt;/span&gt;: &lt;span style=&quot;color: rgb(181, 206, 168);&quot;&gt;HEATING&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;   }&lt;/div&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; line-height: 18px;&quot;&gt;&lt;div style=&quot;text-align: justify; color: rgb(204, 204, 204);&quot;&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="45" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="D6MtXO1dKV4zH6gCZeqT-8" target="re3Pza3lycyoLmRBugH8-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-8" value="Array of 20 values initialized to &amp;nbsp;0 and filling array with values until array is filled.&lt;br&gt;Calculate the average of the 20 values&lt;br&gt;The software will use this moving average for control and display" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="590" y="388" width="190" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-13" value="&amp;lt; 20 temp readings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry x="-0.2333" y="-60" relative="1" as="geometry">
+            <mxPoint x="360" y="441" as="sourcePoint" />
+            <mxPoint x="390" y="471" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="441" />
+              <mxPoint x="320" y="491" />
+              <mxPoint x="390" y="491" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D6MtXO1dKV4zH6gCZeqT-20" value="VC = AUTO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="6w9SuO5WjnxbAeFiw9oO-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="680" as="targetPoint" />
+            <mxPoint x="420" y="620" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-5" value="VC = OFF" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-37" target="6w9SuO5WjnxbAeFiw9oO-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="620" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-7" value="VC = ON" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-37" target="6w9SuO5WjnxbAeFiw9oO-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="620" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-14" value="VC = AUTO" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-2" target="6w9SuO5WjnxbAeFiw9oO-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-16" value="VC = ON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-2" value="VC = OFF" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="120" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-15" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-6" value="VC = ON" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="640" y="720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-19" value="H/C = HEATING" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-8" target="6w9SuO5WjnxbAeFiw9oO-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-20" value="H/C = COOLING" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-8" target="6w9SuO5WjnxbAeFiw9oO-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-21" value="VC = ON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-22" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-8" value="Auto" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="380" y="840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-12" value="VC = AUTO" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-6" target="6w9SuO5WjnxbAeFiw9oO-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="870" as="sourcePoint" />
+            <mxPoint x="540" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-25" value="VC = ON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-26" value="VC = OFF" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-30" value="Heating Valve On Logic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-17" target="6w9SuO5WjnxbAeFiw9oO-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-34" value="Heating Valve Off&amp;nbsp; Logic" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.213;entryY=0.075;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-17" target="6w9SuO5WjnxbAeFiw9oO-31" edge="1">
+          <mxGeometry x="0.5889" y="8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-35" value="HC = COOLING" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-17" value="Heating" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="120" y="960" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-23" value="VC = ON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-24" value="VC = OFF" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-29" value="Cooling Valve On Logic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-18" target="6w9SuO5WjnxbAeFiw9oO-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-33" value="Cooling Valve Off Logig" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-18" target="6w9SuO5WjnxbAeFiw9oO-32" edge="1">
+          <mxGeometry x="0.305" y="6" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-36" value="HC = HEATING" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-18" value="Cooling" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="645" y="960" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-1" value="VC = ON" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-2" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="159.68965517241395" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-27" value="Heating&lt;br&gt;Valve On" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="120" y="1120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-7" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685.2068965517242" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-8" value="VC = ON" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-28" value="Cooling Valve On" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="645" y="1120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-3" value="VC = ON" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1280" as="targetPoint" />
+            <mxPoint x="270" y="1249.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-4" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="319.68965517241395" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-31" value="Heating&lt;br&gt;Valve Off" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-5" value="VC = ON" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v4Wgpt4rbtSuEi2X_UbL-6" value="VC = OFF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6w9SuO5WjnxbAeFiw9oO-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519.689655172414" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-32" value="Cooling&lt;br&gt;Valve Off" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6w9SuO5WjnxbAeFiw9oO-37" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="380" y="560" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ikjvuBmZwSZJaErSMhUm-1" value="Nocturnal Cooling&lt;br&gt;&amp;nbsp;During nighttime hours, when enabled, the GL-235 will circulate relatively warmer water from the pool to the collector panels, thus cooling the pool over time. The GL-235 will circulate water when the collector temperature AND the pool temperature is hotter than the high limit (pool temperature setting). Circulation will stop when the collector temperature is 3oF less than the pool temperature OR the pool temperature is cooler than the high limit setting." style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="180" width="320" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ikjvuBmZwSZJaErSMhUm-3" value="In the “AUTO” position, the GL-235 will heat the pool or spa (rotate valve to solar loop) when the collector (solar) sensor temperature is higher than the pool/spa sensor temperature by 4oF or more AND the pool/spa temperature is less than the &quot;Desired Temperature&quot; setting. The GL-235 will stop heating (return valve to pool loop) when the two sensor temperatures get to within 1.5oF OR the pool/spa sensor is above the &quot;Desired Temperature&quot; setting." style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="40" width="320" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bePCC1Onp8oYvNiQeJNW" name="Page-2">
+    <mxGraphModel dx="782" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-13" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;HC = COOLING&lt;/font&gt;" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-1" target="5JZfYfE-1gcW5Ti78L9j-2" edge="1">
+          <mxGeometry y="-12" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-23" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = OFF&lt;/font&gt;" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-1" edge="1">
+          <mxGeometry x="0.0004" y="-10" relative="1" as="geometry">
+            <mxPoint x="256" y="479.8571428571429" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-24" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = ON&lt;/font&gt;" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="296" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-1" value="Heating&amp;nbsp;&lt;br&gt;State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="336" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-11" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;HC = HEATING&lt;/font&gt;" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-2" target="5JZfYfE-1gcW5Ti78L9j-1" edge="1">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-20" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="776" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-25" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = OFF&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="5JZfYfE-1gcW5Ti78L9j-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.2014" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-22" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = ON&lt;/font&gt;" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="736" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-2" value="Cooling&amp;nbsp;&lt;br&gt;State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="616" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B_xo1-wjUfdOqezFGCRV-1" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = OFF&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5JZfYfE-1gcW5Ti78L9j-3">
+          <mxGeometry x="-0.0042" y="-10" relative="1" as="geometry">
+            <mxPoint x="640" y="319.9047619047619" as="targetPoint" />
+            <mxPoint x="10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-3" value="Init State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="481" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-6" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = FORCED_OFF&lt;br&gt;H/C = HEATING&lt;br&gt;Pool Temperature Set Point = MIN_TEMP&lt;br&gt;&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="5JZfYfE-1gcW5Ti78L9j-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="521" y="120" as="sourcePoint" />
+            <mxPoint x="476" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5JZfYfE-1gcW5Ti78L9j-3" target="5JZfYfE-1gcW5Ti78L9j-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="416" y="320" />
+              <mxPoint x="416" y="292" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;System does not exit Init State until an average temperature for pool temperature and solar temperature has been established.&amp;nbsp; This is achieved by taking a sample every second for 20 seconds (20 samples) and computing the average Pool and Solar temps.&amp;nbsp; From that point on, all pool and solar temperatures are average temperatures.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="116" y="260" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-14" value="VC&amp;nbsp; OFF&lt;br&gt;State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="141" y="1030" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-15" value="VC&amp;nbsp; On&lt;br&gt;State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="541" y="1030" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Valve Control = Manual On&lt;br&gt;Every state will transition to this state when the user selects to put the valve in the On state&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="631" y="1055" width="240" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-17" value="Valve Control = Manual On&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Every state will transition to this state when the user selects to put the valve in the On state&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="231" y="1055" width="240" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-26" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Previous State was VC = OFF State | &lt;br&gt;Previous State was VC = ON State &amp;amp;&lt;br&gt;VC = AUTO AND&lt;br&gt;H/C = HEATING&lt;br&gt;&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="5JZfYfE-1gcW5Ti78L9j-1" edge="1">
+          <mxGeometry x="-0.0039" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="376" y="640" as="sourcePoint" />
+            <mxPoint x="377" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="376.96" y="577.44" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-27" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Previous State was VC = OFF State | &lt;br&gt;Previous State was VC = ON State &amp;amp;&lt;br&gt;VC = AUTO AND&lt;br&gt;H/C = COOLING&lt;br&gt;&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0001" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="656" y="640" as="sourcePoint" />
+            <mxPoint x="655.52" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="656.48" y="577.44" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5JZfYfE-1gcW5Ti78L9j-28" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Heating State&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b&gt;Preconditions&lt;br&gt;&lt;/b&gt;Average pool and solar temperature readings are acquired every second.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="141" y="680" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="d-nZkED9Pi6-cVnCmHOg-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;font-size: 10px; background-color: initial;&quot;&gt;Pool Heating Description&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;In the heating mode (Auto), the system will heat the pool or spa when the solar temperature is higher than the pool temperature by 4 degrees F or more AND the pool temperature is less than the pool temperature setting. &lt;br&gt;The system will stop heating when the two sensor temperatures get to within 1.5 degrees F OR the pool temperature is above the &quot;Desired Temperature&quot; setting.&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Logic&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;IF in heating mode AND (solar temp - pool temp &amp;gt;= 4 degrees F) AND pool temp &amp;lt; pool temperature setting&lt;br&gt;THEN turn valve on&lt;br&gt;&lt;br&gt;IF in heating mode AND ( |solar temp - pool temp| &amp;gt;= 1.5 degrees F) OR&amp;nbsp; pool temp &amp;gt; pool temperature setting&lt;br&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="141" y="750" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sxogAibongxqHhWhI8PD-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;font-size: 10px; background-color: initial;&quot;&gt;Nocturnal Cooling Description&lt;/b&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;During nighttime hours, when enabled, the system will circulate relatively warmer water from the pool to the collector panels, thus cooling the pool over time. The system will circulate water when the solar temperature AND the pool temperature is hotter than the high limit (pool temperature setting).&lt;/span&gt;&lt;/div&gt;Circulation will stop when the solar temperature is 3 degrees F less than the pool temperature OR the pool temperature is cooler than the high limit setting.&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Logic&lt;/b&gt;&lt;/div&gt;IF in cooling mode AND solar temp &amp;gt; pool temperature setting AND pool temp &amp;gt; pool temperature setting&lt;br&gt;THEN turn valve on&lt;br&gt;&lt;br&gt;IF in cooling mode AND (pool temp - solar temp&amp;nbsp; &amp;lt;&amp;nbsp; 3 degrees F) OR pool temp &amp;lt; pool temperature setting&lt;br&gt;THEN turn valve off&lt;br&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="581" y="750" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sxogAibongxqHhWhI8PD-2" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Cooling State&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;font size=&quot;1&quot;&gt;&lt;br&gt;&lt;b&gt;Preconditions&lt;/b&gt;&lt;br&gt;Average pool and solar temperature readings are acquired every second.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="581" y="680" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-2" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;To VC ON State&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="235" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-3" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;To VC OFF State&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="186" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-4" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;To VC OFF State&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="776" y="465" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;To VC ON State&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="736" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Solar Controller State Machine Diagram&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="326" y="40" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="V3WcWwlX-VrFf0-MXmQG-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Abbreviations&lt;/b&gt;&lt;/div&gt;VC : Valve Control [FORCED_ON, FORCED_OFF, AUTO]&lt;br&gt;H/C: Heating / Cooling Mode [HEATING, COOLING]&lt;br&gt;| : Logical OR&lt;br&gt;&amp;amp; : Logical AND&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="616" y="170" width="264" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mGOZPPD4A-LdTGHevTKW" name="Page-3">
+    <mxGraphModel dx="456" dy="281" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZcLc3boqBthi3GWkeXKS-1" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Init State&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Initialize state info&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Get 20 samples of pool and solar temp&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Get average pool and solar temps from 20 samples (20 seconds)&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="470" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="ZcLc3boqBthi3GWkeXKS-2" target="Olbxsl9PJdDCBH6zYvWZ-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZcLc3boqBthi3GWkeXKS-2" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Get state Information&amp;nbsp;&lt;br&gt;Get&amp;nbsp; average pool and solar temps&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-1" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;VC = FORCED_OFF&lt;br&gt;H/C = HEATING&lt;br&gt;Pool Temperature Set Point = MAX_TEMP&lt;br&gt;&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ZcLc3boqBthi3GWkeXKS-1" target="ZcLc3boqBthi3GWkeXKS-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="570" as="sourcePoint" />
+            <mxPoint x="240" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-17" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;state = Heating State&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-4" target="Olbxsl9PJdDCBH6zYvWZ-9" edge="1">
+          <mxGeometry x="0.8286" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="900" />
+              <mxPoint x="300" y="900" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-29" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;state = Cooling State&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-4" target="Olbxsl9PJdDCBH6zYvWZ-7" edge="1">
+          <mxGeometry x="0.6842" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="900" />
+              <mxPoint x="460" y="900" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-30" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;state = VC OFF State&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-4" target="Olbxsl9PJdDCBH6zYvWZ-6" edge="1">
+          <mxGeometry x="0.6842" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="900" />
+              <mxPoint x="620" y="900" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-31" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;state = VC ON State&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-4" target="Olbxsl9PJdDCBH6zYvWZ-8" edge="1">
+          <mxGeometry x="0.8286" relative="1" as="geometry">
+            <mxPoint x="770" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="900" />
+              <mxPoint x="780" y="900" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-4" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="770" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="1080" />
+              <mxPoint x="541" y="1080" />
+              <mxPoint x="541" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-6" value="VC Off State" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="560" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="1080" />
+              <mxPoint x="541" y="1080" />
+              <mxPoint x="541" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-7" value="Cooling State" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="400" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-8" target="Olbxsl9PJdDCBH6zYvWZ-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="1080" />
+              <mxPoint x="540" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-8" value="VC On State" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="720" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="1160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="1080" />
+              <mxPoint x="541" y="1080" />
+              <mxPoint x="541" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-9" value="Heating State" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="240" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iIbQNQhBmw0zcah1zu4g-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="Olbxsl9PJdDCBH6zYvWZ-11" target="ZcLc3boqBthi3GWkeXKS-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="1190" />
+              <mxPoint x="200" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Olbxsl9PJdDCBH6zYvWZ-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Delay 1 second&lt;/font&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ac21MRRzj1bkNtIm42sW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ac21MRRzj1bkNtIm42sW-1" target="ac21MRRzj1bkNtIm42sW-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="180" />
+              <mxPoint x="277" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ac21MRRzj1bkNtIm42sW-1" value="Heating On State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ac21MRRzj1bkNtIm42sW-3" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;solar - pool &amp;gt;= 4 deg /&amp;nbsp;&lt;br&gt;turn valve on&lt;br&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ac21MRRzj1bkNtIm42sW-2" target="ac21MRRzj1bkNtIm42sW-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ac21MRRzj1bkNtIm42sW-2" value="Heating State" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
