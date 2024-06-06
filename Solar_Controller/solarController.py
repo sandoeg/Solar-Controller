@@ -13,7 +13,7 @@ import RPi.GPIO as GPIO
 import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.ads1x15 import Mode
 from adafruit_ads1x15.analog_in import AnalogIn
-# pip install Pyrebase3 
+# pip install pyrebase4
 import pyrebase
 
 # *********************************** Constants ***********************************
