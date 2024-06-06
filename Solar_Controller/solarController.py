@@ -4,16 +4,16 @@ import sys
 import json
 import math
 import types
-# pip3 install Adafruit-Blinka
+# pip install Adafruit-Blinka
 import board
 import busio
-# pip3 install rpi.gpio2
+# pip install rpi.gpio
 import RPi.GPIO as GPIO
-# pip3 install adafruit-circuitpython-ads1x15
+# pip install adafruit-circuitpython-ads1x15
 import adafruit_ads1x15.ads1115 as ADS
 from adafruit_ads1x15.ads1x15 import Mode
 from adafruit_ads1x15.analog_in import AnalogIn
-# pip3 install Pyrebase3 
+# pip install Pyrebase3 
 import pyrebase
 
 # *********************************** Constants ***********************************
