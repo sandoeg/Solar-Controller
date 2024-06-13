@@ -165,7 +165,7 @@ def get_avg_pool_temperature():
     x2 = math.pow(x,2)
     # Equation derived from Excel polynomial line fit
     y = (3.009*x2)-(48.319*x)+178.86
-    #print('pool_temp: ', y)
+    print('pool_temp:  ', y)
     # Get average temperature of the pool sensor readings 
     avg_pool_temp = get_temp_average(pool_temp_values, y)
     return(avg_pool_temp)
@@ -180,7 +180,7 @@ def get_avg_solar_temperature():
     x2 = math.pow(x,2)
     # Equation derived from Excel polynomial line fit
     y = (3.009*x2)-(48.319*x)+178.86
-    #print('solar_temp: ', y)
+    print('solar_temp: ', y)
     # Get average temperature of the pool sensor readings 
     avg_solar_temp = get_temp_average(solar_temp_values, y)
     return(avg_solar_temp)
