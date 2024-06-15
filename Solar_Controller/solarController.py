@@ -1,3 +1,17 @@
+""" 
+Heating Mode
+The system will heat the pool or spa (rotate valve to solar loop)
+when the collector (solar) sensor temperature is higher than the pool/spa sensor temperature by 4 degrees F 
+or more AND the pool/spa temperature is less than the "Desired Temperature" setting. The GL-235 
+will stop heating (return valve to pool loop) when the two sensor temperatures get to within 1.5oF 
+OR the pool/spa sensor is above the "Desired Temperature" setting. 
+
+Cooling Mode 
+The system will circulate water when the collector temperature AND the pool temperature is hotter 
+than the high limit setting. Circulation will stop when the collector temperature is 3 degrees F less 
+than the pool temperature OR the pool temperature is cooler than the high limit setting.
+"""
+
 import os
 import time
 import sys
